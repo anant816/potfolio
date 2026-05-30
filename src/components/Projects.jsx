@@ -7,19 +7,26 @@ function Projects() {
       description:
         "A modern responsive portfolio website showcasing skills, projects, and achievements with an attractive UI.",
       tech: "React, Bootstrap",
+      github: "https://github.com/anant816/potfolio",
+      demo: "https://potfolio-three-iota.vercel.app/",
     },
+
     {
-      title: "Stock tracker",
+      title: "Stock Tracker",
       description:
-        "A full-stack stock tracker web application built using the MERN stack with authentication, property listings, and image uploads.",
+        "A full-stack stock tracker web application built using the MERN stack with authentication and real-time stock tracking.",
       tech: "React, Node.js, Express, MongoDB",
+      github: "https://github.com/anant816/stock-mern-project",
+      demo: "#",
     },
-    
+
     {
-      title: "AI automation",
+      title: "AI Automation",
       description:
-        "currently working on it",
-      tech: "N8N,Docker",
+        "Currently working on automation workflows using n8n and Docker.",
+      tech: "n8n, Docker",
+      github: "#",
+      demo: "#",
     },
   ];
 
@@ -36,11 +43,9 @@ function Projects() {
           My Projects
         </h1>
 
-        <p
-          className="text-center text-muted mb-5"
-        >
-          Some of the projects I have built while learning
-          Full Stack Development.
+        <p className="text-center text-muted mb-5">
+          Some of the projects I have built while learning Full Stack
+          Development.
         </p>
 
         <div className="row">
@@ -50,11 +55,9 @@ function Projects() {
                 className="card h-100 shadow-sm border-0"
                 style={{
                   borderRadius: "20px",
-                  transition: "0.3s",
                 }}
               >
                 <div className="card-body p-4">
-
                   <h3
                     style={{
                       color: "#7c3aed",
@@ -79,25 +82,29 @@ function Projects() {
                   </div>
 
                   <div className="mt-4">
-                    <button
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
                       className="btn btn-outline-primary me-2"
                     >
                       Live Demo
-                    </button>
+                    </a>
 
-                    <button
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
                       className="btn btn-primary"
                     >
                       GitHub
-                    </button>
+                    </a>
                   </div>
-
                 </div>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

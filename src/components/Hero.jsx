@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../pics/img1.png";
+import logo from "../pics/img3.png";
 
 function Hero() {
   return (

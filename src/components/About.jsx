@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../pics/img1.png";
+import logo from "../pics/img4.png";
 
 function About() {
   return (
@@ -15,18 +15,19 @@ function About() {
 
           {/* Left Side Image */}
           <div className="col-lg-5 text-center mb-5 mb-lg-0">
-            <img
-              src={logo}
-              alt="About"
-              style={{
-                width: "320px",
-                height: "320px",
-                borderRadius: "50%",
-                objectFit: "cover",
-                border: "5px solid #c084fc",
-                boxShadow: "0 0 30px rgba(192,132,252,0.4)",
-              }}
-            />
+           <img
+            src={logo}
+            alt="About"
+            style={{
+            width: "320px",
+            height: "320px",
+            borderRadius: "50%",
+            objectFit: "cover",
+            objectPosition: "center 20%",
+            border: "5px solid #c084fc",
+            boxShadow: "0 0 30px rgba(192,132,252,0.4)",
+            }}
+        />
           </div>
 
           {/* Right Side Content */}
